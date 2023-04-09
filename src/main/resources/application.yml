@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+spring:
+#  datasource:
+#    url: jdbc:postgresql://localhost:5442/invoice
+#    username: invoice_api
+#    password: password
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.PostgreSQLDialect
+#        format_sql: true
+    show-sql: true
+  main:
+    web-application-type: servlet
